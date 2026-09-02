@@ -72,7 +72,7 @@ def get_recommendation(label: str, confidence: float) -> str:
 # ============================================================
 @app.get("/")
 def home():
-    return {"status": "ok", "message": "Avocado  API (FastAPI) กำลังทำงาน 🥑"}
+    return {"status": "ok", "message": "Avocado  API (FastAPI) กำลังทำงาน"}
 
 @app.post("/predict")
 async def predict_route(image: UploadFile = File(...)):
