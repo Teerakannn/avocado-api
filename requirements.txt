@@ -3,4 +3,4 @@ uvicorn[standard]
 python-multipart
 pillow
 numpy
-tensorflow-cpu
+tensorflow-cpu==2.16.1
