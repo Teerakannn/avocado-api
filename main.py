@@ -16,7 +16,6 @@ LABELS_PATH = BASE_DIR / "labels.txt"
 IMAGE_SIZE = (224, 224)
 
 # โหลด TensorFlow Lite
-# TensorFlow Lite บางรุ่นต้องการ path เป็นข้อความ str ไม่ใช่ Path object
 interpreter = tf.lite.Interpreter(model_path=str(MODEL_PATH))
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
